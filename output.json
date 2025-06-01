@@ -1,0 +1,271 @@
+[
+  {
+    "type": "activity",
+    "name": "com.bitkub.MainActivity",
+    "exported": "true",
+    "permission": [],
+    "intent_filters": [
+      {
+        "actions": [
+          "android.intent.action.MAIN",
+          "android.intent.action.DOWNLOAD_COMPLETE"
+        ],
+        "categories": [
+          "android.intent.category.LAUNCHER"
+        ],
+        "data": []
+      },
+      {
+        "actions": [
+          "android.intent.action.VIEW"
+        ],
+        "categories": [
+          "android.intent.category.DEFAULT",
+          "android.intent.category.BROWSABLE"
+        ],
+        "data": [
+          {
+            "scheme": "https"
+          },
+          {
+            "host": "onelink.bitkub.com"
+          },
+          {
+            "scheme": "https"
+          },
+          {
+            "host": "passkey.bitkub-int.com"
+          }
+        ]
+      },
+      {
+        "actions": [
+          "android.intent.action.VIEW"
+        ],
+        "categories": [
+          "android.intent.category.DEFAULT",
+          "android.intent.category.BROWSABLE"
+        ],
+        "data": [
+          {
+            "scheme": "bitkub",
+            "host": "com.bitkub"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "service",
+    "name": "com.google.android.gms.auth.api.signin.RevocationBoundService",
+    "exported": "true",
+    "permission": [
+      {
+        "permission": "com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION",
+        "is_standard": "n",
+        "is_declared": "n"
+      }
+    ],
+    "intent_filters": []
+  },
+  {
+    "type": "service",
+    "name": "androidx.work.impl.background.systemjob.SystemJobService",
+    "exported": "true",
+    "permission": [
+      {
+        "permission": "android.permission.BIND_JOB_SERVICE",
+        "is_standard": "y",
+        "is_declared": "n"
+      }
+    ],
+    "intent_filters": []
+  },
+  {
+    "type": "service",
+    "name": "com.huawei.hms.support.api.push.service.HmsMsgService",
+    "exported": "true",
+    "permission": [],
+    "intent_filters": [
+      {
+        "actions": [
+          "com.huawei.push.msg.NOTIFY_MSG",
+          "com.huawei.push.msg.PASSBY_MSG"
+        ],
+        "categories": [],
+        "data": []
+      }
+    ]
+  },
+  {
+    "type": "receiver",
+    "name": "com.bitkub.Widget",
+    "exported": "true",
+    "permission": [],
+    "intent_filters": [
+      {
+        "actions": [
+          "android.appwidget.action.APPWIDGET_UPDATE"
+        ],
+        "categories": [],
+        "data": []
+      }
+    ]
+  },
+  {
+    "type": "receiver",
+    "name": "io.invertase.firebase.messaging.ReactNativeFirebaseMessagingReceiver",
+    "exported": "true",
+    "permission": [
+      {
+        "permission": "com.google.android.c2dm.permission.SEND",
+        "is_standard": "n",
+        "is_declared": "n"
+      }
+    ],
+    "intent_filters": [
+      {
+        "actions": [
+          "com.google.android.c2dm.intent.RECEIVE"
+        ],
+        "categories": [],
+        "data": []
+      }
+    ]
+  },
+  {
+    "type": "receiver",
+    "name": "com.google.firebase.iid.FirebaseInstanceIdReceiver",
+    "exported": "true",
+    "permission": [
+      {
+        "permission": "com.google.android.c2dm.permission.SEND",
+        "is_standard": "n",
+        "is_declared": "n"
+      }
+    ],
+    "intent_filters": [
+      {
+        "actions": [
+          "com.google.android.c2dm.intent.RECEIVE"
+        ],
+        "categories": [],
+        "data": []
+      }
+    ]
+  },
+  {
+    "type": "receiver",
+    "name": "androidx.work.impl.diagnostics.DiagnosticsReceiver",
+    "exported": "true",
+    "permission": [
+      {
+        "permission": "android.permission.DUMP",
+        "is_standard": "y",
+        "is_declared": "n"
+      }
+    ],
+    "intent_filters": [
+      {
+        "actions": [
+          "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+        ],
+        "categories": [],
+        "data": []
+      }
+    ]
+  },
+  {
+    "type": "receiver",
+    "name": "androidx.profileinstaller.ProfileInstallReceiver",
+    "exported": "true",
+    "permission": [
+      {
+        "permission": "android.permission.DUMP",
+        "is_standard": "y",
+        "is_declared": "n"
+      }
+    ],
+    "intent_filters": [
+      {
+        "actions": [
+          "androidx.profileinstaller.action.INSTALL_PROFILE"
+        ],
+        "categories": [],
+        "data": []
+      },
+      {
+        "actions": [
+          "androidx.profileinstaller.action.SKIP_FILE"
+        ],
+        "categories": [],
+        "data": []
+      },
+      {
+        "actions": [
+          "androidx.profileinstaller.action.SAVE_PROFILE"
+        ],
+        "categories": [],
+        "data": []
+      },
+      {
+        "actions": [
+          "androidx.profileinstaller.action.BENCHMARK_OPERATION"
+        ],
+        "categories": [],
+        "data": []
+      }
+    ]
+  },
+  {
+    "type": "receiver",
+    "name": "com.huawei.hms.support.api.push.PushMsgReceiver",
+    "exported": "true",
+    "permission": [
+      {
+        "permission": "com.bitkub.permission.PROCESS_PUSH_MSG",
+        "is_standard": "n",
+        "is_declared": "y"
+      }
+    ],
+    "intent_filters": [
+      {
+        "actions": [
+          "com.huawei.intent.action.PUSH_DELAY_NOTIFY",
+          "com.huawei.intent.action.PUSH"
+        ],
+        "categories": [],
+        "data": []
+      }
+    ]
+  },
+  {
+    "type": "receiver",
+    "name": "com.huawei.hms.support.api.push.PushReceiver",
+    "exported": "true",
+    "permission": [
+      {
+        "permission": "com.bitkub.permission.PROCESS_PUSH_MSG",
+        "is_standard": "n",
+        "is_declared": "y"
+      }
+    ],
+    "intent_filters": [
+      {
+        "actions": [
+          "com.huawei.android.push.intent.REGISTRATION",
+          "com.huawei.android.push.intent.RECEIVE"
+        ],
+        "categories": [],
+        "data": []
+      }
+    ]
+  },
+  {
+    "type": "provider",
+    "name": "com.huawei.hms.support.api.push.PushProvider",
+    "exported": "true",
+    "permission": [],
+    "intent_filters": []
+  }
+]
